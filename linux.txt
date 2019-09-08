@@ -1,0 +1,93 @@
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh   //cake walk till now
+-----------------*-------------------------
+Level 5:
+CAT command
+MANAGE PROCESSES https://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/
+CAT https://www.howtogeek.com/278599/how-to-combine-text-files-using-the-cat-command-in-linux/
+GREP  https://www.youtube.com/watch?v=VGgTmxXp7xQ
+
+
+acts as a revision guide to me
+--> cat >> file.txt
+allows to append data to file.txt
+--> cat file1.txt >> file2.txt
+concats the contents of file1.txt to file2.txt at end of line
+
+
+GREP command
+g/re/p -> global regular expression print
+for searching specific strings or cases matching The regular expression we provide
+
+flags
+-P to use regex i learn in regex101 (forgot the name)
+
+-i case insensitive
+-w whole word. equivalent of '\b \b'
+-n return line number where the regex matched
+
+-A {variable}return contents above the matched case
+example : --> grep -A 2 '\d{3}' .
+searches for 3 digits all over the file system and wherever the case is matched shows the contents two lines above it
+-B {variable} behind
+-C {variable} above and behind
+
+useful feature
+grep piping
+example : listing process involved with chrome
+--> ps -A | grep chrome
+lists all the processes involved with chrome
+--> ps -A | grep chome | less
+look at it at own pace
+
+DU (Disk usage)
+flags :
+-a for all
+-h human readable form
+--exclude
+
+
+find command
+exercise : Write a command to list all the mp3 files owned by the user
+useful flags
+-size
+-name
+-user
+-owner
+
+Password for next level : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+how was it achived (3 methods)
+
+--> grep -P -wr '[0-9a-zA-Z]{32}' .
+this means -P python flavor type
+-w whole word
+-r recursive (find within all folders and directories)
+
+-->find . -size 1033c
+here . means everything present within the directory currently placed on
+1033c means 1033 bytes
+
+-->find -readable -size 1033c \! -executable     //(more complete version)
+-readable if data is readable
+\! -executable -> data is not executable
+
+Level 6 -> Level 7
+
+password for next level : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+how was it achieved
+get into root directory
+--> cd /
+--> find . -size 33c -user bandit7 -group bandit6
+
+
+Level 7 ->level 8
+
+password for next level : cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+how was it achieved
+--> grep 'millionth' data.txt
+-->grep -win -C 2 'millionth' data.txt   //for more context
