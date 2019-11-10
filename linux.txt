@@ -2,9 +2,14 @@ boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+Level 4->5:
+command used
+
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh   //cake walk till now
 -----------------*-------------------------
-Level 5:
+
+
+Level 5->6:
 CAT command
 MANAGE PROCESSES https://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/
 CAT https://www.howtogeek.com/278599/how-to-combine-text-files-using-the-cat-command-in-linux/
@@ -91,3 +96,17 @@ password for next level : cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 how was it achieved
 --> grep 'millionth' data.txt
 -->grep -win -C 2 'millionth' data.txt   //for more context
+
+Level 8-> level 9
+
+piping methods reference : http://www.westwind.com/reference/os-x/commandline/pipes.html:
+
+>  to redirect output from command to disk
+example ps -ax > process.txt
+>> to append
+
+tee - can be used in middle of pipe and allows to be written into text file then another command can be used
+ps -ax | tee processes.txt | less
+
+
+
