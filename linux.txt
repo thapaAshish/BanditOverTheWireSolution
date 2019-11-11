@@ -109,4 +109,20 @@ tee - can be used in middle of pipe and allows to be written into text file then
 ps -ax | tee processes.txt | less
 
 
+password for next level : UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+commands used:
+
+ssh -p 2220 bandit8@bandit.labs.overthewire.org "sort data.txt" > log.txt  (what this does is basically stores sorted data from ssh server to local computer
+
+GREP method:
+open atom 
+then use regex finder. the regex is
+^(.*)(\r?\n\1)+$
+how does it work?  (.*)-> matches all characters (except terminating characters) zero or more times 
+                   (\r?\n\1)+ -> carriage return will move everything to leftmost side zero or one times. \n is going to move to next line. \1 matches recently matched group i.e whatever is present in (.*). 
+
+
+
+
 
