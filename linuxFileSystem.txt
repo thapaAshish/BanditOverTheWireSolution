@@ -1,0 +1,32 @@
+FHS standard.
+
+bin --> binaries  (CAT command , ls command)
+sbin --> systembinaries (system administrator binaries)
+boot --> bootloader
+cdrom --> legacy mounting point for cd drive
+dev --> everything in linux is a file. this is where all the devices such as hard disk live.( main disk dev/sda : partitions dev/sda1 , dev/sda2 )
+etc --> literally etc . folder where system configuration lives. for example sources of repo for apt will live here
+lib --> libraries are stored here (libraries required for binaries in bin and sbin)
+media --> all the pheripherals that are connected externally can be found. (can be external disk , network adapter driver )
+mnt --> manually mounting point system. if you mount something manually you will find on mnt
+opt --> optional folder . manaully installed softwares resides here.
+proc --> as everything is file in linux. proc contains files of all running processes.
+also useful information such as type of cpu and uptime can be found from where
+ie : cat proc/cpuinfo or proc/uptime
+root --> root user folder.
+run --> temporary file system. the files within this folder only exists in RAM so the files are gone after system reboots. used for packages and programs to store runtime functions during startup
+snap --> debian based packages (need more information)
+srv --> service directory where service data is stored. While running a webserver data that can be accessed by external user can be stored here so it provices max security due to this being in root directory and mounting the folder is also easy.
+sys --> similar to run directory so the files that are present are created during startup.
+tmp --> temporary directory where programs will save a temporary copy. if a program crashes taking a look at temp directory is mandatory. normal users can't delete files in the folder so they have to login as root to access the folder and delete the contents if they are taking more space.
+usr --> user application space applications installed by users will be stored here. non essential for basic operation of operating system.
+|
+|--> usr/bin
+|
+|--> usr/sbin
+var --> variable direcory. conatains files and directory that are expected to grow its size.
+var-crash : contains log about the program that have recently been crashed.
+car-log : contains log files for system and many application.
+spool : temporary storage for printer queues.
+
+/home : is a user specific folder. is generally mounted on different partition to preserve files while formatting. user based program settings are present.
