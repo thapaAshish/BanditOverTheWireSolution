@@ -123,6 +123,25 @@ how does it work?  (.*)-> matches all characters (except terminating characters)
                    (\r?\n\1)+ -> carriage return will move everything to leftmost side zero or one times. \n is going to move to next line. \1 matches recently matched group i.e whatever is present in (.*). 
 
 
+level 9 -> level 10
+password for next level : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+how was that achieved. 
+just looked for = to sign 
+grep '={2,}' data.txt
+returned 5 results and one of them was password
+
+base64:
+String taken in multiple of 3
+Converted into ascii then the ascii number into binary
+
+24 wota bit
+Divide that by 6
+Binary converted into decimal
+Then base64 chart
+
+
+
 
 
 
