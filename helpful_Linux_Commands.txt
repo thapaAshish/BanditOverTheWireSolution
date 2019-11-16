@@ -1,0 +1,4 @@
+how to search for directory only using ls.
+best method : ls -l | grep -P 'd.{4,}'
+and how to list all the files except directories
+ls -l | grep -P -v 'd.{4,}'
