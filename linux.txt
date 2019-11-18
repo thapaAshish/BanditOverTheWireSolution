@@ -85,8 +85,8 @@ password for next level : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
 how was it achieved
 get into root directory
---> cd /
---> find . -size 33c -user bandit7 -group bandit6
+$ cd /
+$ find . -size 33c -user bandit7 -group bandit6
 
 
 Level 7 ->level 8
@@ -94,26 +94,28 @@ Level 7 ->level 8
 password for next level : cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 how was it achieved
---> grep 'millionth' data.txt
--->grep -win -C 2 'millionth' data.txt   //for more context
+$ grep 'millionth' data.txt
+$ grep -win -C 2 'millionth' data.txt   //for more context
 
 Level 8-> level 9
 
 piping methods reference : http://www.westwind.com/reference/os-x/commandline/pipes.html:
 
 >  to redirect output from command to disk
-example ps -ax > process.txt
+example: 
+$ ps -ax > process.txt
+
 >> to append
 
 tee - can be used in middle of pipe and allows to be written into text file then another command can be used
-ps -ax | tee processes.txt | less
+$ ps -ax | tee processes.txt | less
 
 
 password for next level : UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 commands used:
 
-ssh -p 2220 bandit8@bandit.labs.overthewire.org "sort data.txt" > log.txt  (what this does is basically stores sorted data from ssh server to local computer
+$ ssh -p 2220 bandit8@bandit.labs.overthewire.org "sort data.txt" > log.txt  (what this does is basically stores sorted data from ssh server to local computer
 
 GREP method:
 open atom 
@@ -139,6 +141,15 @@ Converted into ascii then the ascii number into binary
 Divide that by 6
 Binary converted into decimal
 Then base64 chart
+
+level 10-> level 11
+password for next level: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+procedure to achive the password.
+
+$ base64 -d data.txt
+ 
+level 11 -> level 12
 
 
 
