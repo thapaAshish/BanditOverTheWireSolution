@@ -151,6 +151,14 @@ $ base64 -d data.txt
  
 level 11 -> level 12
 
+ROT13 or rotate by 13 is text ciphering method used typically in forums to hide spoilers.
+it works by returning character which is 13th position away from it.
+if A is given as input then N is the output.similarly
+B -> O
+
+ROT13(ROT13(X)) = X because there are 26 characters in english alphabet.
+
+
 
 
 
