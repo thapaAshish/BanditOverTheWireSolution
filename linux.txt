@@ -150,6 +150,7 @@ procedure to achive the password.
 $ base64 -d data.txt
  
 level 11 -> level 12
+password for next level : 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
 ROT13 or rotate by 13 is text ciphering method used typically in forums to hide spoilers.
 it works by returning character which is 13th position away from it.
@@ -157,6 +158,15 @@ if A is given as input then N is the output.similarly
 B -> O
 
 ROT13(ROT13(X)) = X because there are 26 characters in english alphabet.
+
+procedure to achieve the password.
+
+$ssh -p 2220 bandit11@bandit.labs.overthewire.org "cat data.txt" > 1.txt
+for lowercase characters
+$cat 1.txt | tr [a-z] [n-za-m] > 2.txt     
+
+for uppercase characters
+$cat 2.txt | tr [A-Z] [N-ZA-M] > password.txt
 
 
 
