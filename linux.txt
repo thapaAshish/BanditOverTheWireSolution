@@ -170,6 +170,37 @@ $cat 2.txt | tr [A-Z] [N-ZA-M] > password.txt
 
 
 
+Level 12 -> Level 13
+password for next level : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Some Reading material::
+
+HexDump: 
+https://en.wikipedia.org/wiki/Hex_dump    
+https://www.suse.com/c/making-sense-hexdump/
+
+Commands used::
+xxd, gzip , mv, cat, bzip2, tar
+
+procedure to achive password: 
+$ ssh -p 2220 bandit12@bandit.labs.overthewire.org "xxd -r data.txt" > compressedfile
+$ file compressedfile
+$ mv compressedfile compressedfile.gz
+$ gzip -d compressedfile.gz
+$ ls
+$ file compressedfile
+$ bzip2 -d compressedfile
+$ file compressedfile.out
+$ mv compressedfile.out compressedfile.gz
+$ gzip -d compressedfile.gz
+$ file compressedfile
+$ tar -x -f compressedfile   //dat5.bin creation
+...... and so on
+
+until password is found
+
+
+Level 13 -> Level 14
 
 
 
