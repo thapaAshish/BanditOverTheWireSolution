@@ -202,6 +202,16 @@ until password is found
 
 Level 13 -> Level 14
 
+reading material :
+https://help.ubuntu.com/community/SSH/OpenSSH/Keys
+https://en.wikipedia.org/wiki/Public-key_cryptography 
 
+
+procedure to achieve password:
+save the key sshkey.private on your local computer
+this step is on your local machine and i saved the file as sshkey.private
+
+$ chmod 600 sshkey.private
+$ ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
 
 
