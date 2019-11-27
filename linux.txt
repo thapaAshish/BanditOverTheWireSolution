@@ -217,7 +217,15 @@ procedure to get into this level
 $ chmod 600 sshkey.private
 $ ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
 
-password for next level : 
+password for next level : BfMYroe26WYalil77FoDi9qh59eK5xNr
 
 procedure to get into next level:
+loginto your level.
+then type this command.
+
+bandit14@bandit:~$ nc -v localhost 30000
+
+
+
+
 
