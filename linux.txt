@@ -219,6 +219,7 @@ $ ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
 
 password for next level : BfMYroe26WYalil77FoDi9qh59eK5xNr
 
+
 procedure to get into next level:
 loginto your level.
 then type this command.
@@ -226,6 +227,16 @@ then type this command.
 bandit14@bandit:~$ nc -v localhost 30000
 
 
+Level 15 -> Level 16
 
+password for next level : cluFn7wTiGryunymYOu4RcffSxQluehd
+
+procedure:
+$ openssl s_client -connect localhost:30001
+then paste password achieved from previous level
+
+
+
+ 
 
 
