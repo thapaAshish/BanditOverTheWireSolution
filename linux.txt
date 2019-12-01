@@ -236,6 +236,17 @@ $ openssl s_client -connect localhost:30001
 then paste password achieved from previous level
 
 
+Level 16 -> Level 17
+
+RSA Key is given for next level.
+
+procedure:
+$ nc -zv localhost 31000-32000
+
+or 
+
+$ nmap localhost -p 31000-32000
+
 
  
 
