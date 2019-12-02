@@ -249,5 +249,12 @@ $ nmap localhost -p 31000-32000
 
 
  
+Level 17 -> Level 18
+password for next level : kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+procedure to achieve password
+$ diff passwords.new passwords.old
+
+
 
 
