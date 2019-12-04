@@ -263,5 +263,12 @@ procedure to achieve password :
 $  ssh -p 2220 bandit18@bandit.labs.overthewire.org "cat readme" 
 
 
+Level 19 -> Level 20
+password for next level : GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+
+Reading materials: https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
+
+procedure : use the binary given 
 
 
