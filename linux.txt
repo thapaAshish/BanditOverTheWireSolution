@@ -271,4 +271,19 @@ Reading materials: https://www.hackingarticles.in/linux-privilege-escalation-usi
 
 procedure : use the binary given 
 
+Level 20 -> level 21
+password for next level : gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+one of the hardest levels
+
+procedure:
+use tmux or unix control jobs to first create two processes 
+for listner who sends current password
+$ ncd -l -p 8888 < /tmp/passwd
+
+for sender 
+$ ./suconnect 8888
+
+
+
+
 
