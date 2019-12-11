@@ -283,6 +283,57 @@ $ ncd -l -p 8888 < /tmp/passwd
 for sender 
 $ ./suconnect 8888
 
+Level 21 -> Level 22
+password for next level : Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+Helpful reading materials:
+https://opensource.com/article/17/11/how-use-cron-linux
+
+
+procedure:
+$ cat /etc/cron.d/cronjob_bandit22.sh
+
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+it is running some kind of bash script present in /usr/bin/cronjob_bandit22.sh . let's get there
+[understanding the script]
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+Annonation user script 
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+
+@reboot means at reboot time 
+&> /dev/null --> means redirect all stdout and sterr to /dev/null 
+1> /dev/null--> means redirect standard output only
+2> /dev/null--> means redirect standard error only
+
+
+
+$ cat /usr/bin/cronjob_bandit22.sh
+
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+Hmmm... There is a file in /tmp folder which stores the password and everytime bandit 21 reboots the content present in the mentioned file is written to /etc/bandit_pass/bandit22
+
+$ cat tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+Level 22 -> Level 23
+
+
+
+
 
 
 
