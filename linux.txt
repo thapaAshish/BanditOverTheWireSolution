@@ -330,7 +330,10 @@ Hmmm... There is a file in /tmp folder which stores the password and everytime b
 $ cat tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 Level 22 -> Level 23
+password for next level : jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
+
+procedure : same as bandit 23
 
 
 
