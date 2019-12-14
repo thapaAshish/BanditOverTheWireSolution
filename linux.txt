@@ -355,6 +355,21 @@ $ cat /tmp/asdfasdfasdfaasdadsfasdfasdfasdfsadfasdfasdfsadfsad
 
 
 Level 24 -> Level 25
+password for next level : uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+script:
+for x in {0000..1000}
+do 
+	echo $x UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+done | nc localhost 30002 | grep -i 'wrong'
+
+for x in {1000..10000}
+do 
+	echo $x UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+done | nc localhost 30002 | grep -i 'wrong'
+
+
+Level 25 -> Level 26
 
 
 
