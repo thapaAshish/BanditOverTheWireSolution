@@ -361,12 +361,12 @@ script:
 for x in {0000..1000}
 do 
 	echo $x UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
-done | nc localhost 30002 | grep -i 'wrong'
+done | nc localhost 30002 | grep -vi 'wrong'
 
 for x in {1000..10000}
 do 
 	echo $x UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
-done | nc localhost 30002 | grep -i 'wrong'
+done | nc localhost 30002 | grep -vi 'wrong'
 
 
 Level 25 -> Level 26
