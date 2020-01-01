@@ -369,6 +369,27 @@ do
 done | nc localhost 30002 | grep -vi 'wrong'
 
 
+
+some helpful commands i may need to review
+
+ln --> creates a link between two files
+two types of link : hard link and soft link
+hard link : ln [source] [destination] : copies whatever is in the source 
+softlink : create a symbolic link (which means it is dependent upon its source file) i.e if source file is deleted then soft links malfunction
+
+pushd --> pushes directory to stack so that it is easier to work with. generally if working with long path.
+$ pushd /media/ashish/
+~ /media/ashish/
+
+$ pushd ~/Desktop
+~ /media/ashish/ ~/Desktop
+
+$pushd +1 -->iterates over the stack
+
+
+
+
+
 Level 25 -> Level 26
 
 
